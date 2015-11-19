@@ -43,9 +43,14 @@ public class RocketShip {
          for(bslash=2*size-lines;bslash>0;bslash--){
             System.out.print("\\");      
            }
+           System.out.println();
           }
           
-          for(int repeat = size*2
+          System.out.print("+");
+          for(int repeat = size*2;repeat>0;repeat--){
+          System.out.print("=*");
+          }
+          System.out.print("+");
           
           
          }
