@@ -14,7 +14,7 @@ public class RocketShip {
       int fslash;
       int stars;
       int bslash;
-      int test;
+      int dots;
       
       size = scnr.nextInt();
       lines = size*2-1; //5
@@ -50,9 +50,78 @@ public class RocketShip {
           for(int repeat = size*2;repeat>0;repeat--){
           System.out.print("=*");
           }
+          System.out.println("+");
+          
+          
+          //FIRST THING
+          
+          for(lines = size*2-1;lines>size;lines--){
+            System.out.println("|");
+         }
+         
+         
+         
+        // for(dots = 0;;dots){
+      //   System.out.println(".");
+       //  }
+       
+       //SECOND SEPARATOR
+         
           System.out.print("+");
+          for(int repeat = size*2;repeat>0;repeat--){
+          System.out.print("=*");
+          }
+          System.out.println("+");
           
+          //SECOND THING
           
+          for(lines = size*2-1;lines>0;lines--){
+            System.out.println("|");
+         }
+        
+3         System.out.println(".");
+         }
+         
+         
+         //THIRD SEPARATOR
+         
+          System.out.print("+");
+          for(int repeat = size*2;repeat>0;repeat--){
+          System.out.print("=*");
+          }
+          System.out.println("+");
+          
+          //THIRD THING
+          
+          for(lines = size*2-1;lines>0;lines--){
+      
+         System.out.println();
+      
+//SPACES
+         for(spaces=lines; spaces>0; spaces--){
+            System.out.print(" ");
+         }
+         
+//FORWARD SLASHES
+
+         for(fslash=2*size-lines;fslash>0;fslash--){
+            System.out.print("/");
+         }
+         
+//ASTERIKS
+
+         System.out.print("**");
+         
+//BACKSLASHES
+
+         for(bslash=2*size-lines;bslash>0;bslash--){
+            System.out.print("\\");      
+           }
+           System.out.println();
+          }
+
+         
+         
          }
         }
       
